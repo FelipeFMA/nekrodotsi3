@@ -13,17 +13,17 @@
 
 ### Installation Steps
 
-1. Install a terminal emulator (alacritty is used in this setup)
+01. Install a terminal emulator (alacritty is used in this setup)
    ```bash
    sudo pacman -S alacritty
    ```
 
-2. Install an AUR helper (yay is my favorite)
+02. Install an AUR helper (yay is my favorite)
    ```bash
    pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
    ```
 
-3. Install the Nvidia driver:
+03. Install the Nvidia driver:
    ```bash
    yay -S nvidia          # For normal linux kernel
    ```
@@ -31,18 +31,18 @@
    yay -S nvidia-dkms     # For custom kernels such as linux-zen
    ```
 
-4. Install optimus-manager for managing GPUs:
+04. Install optimus-manager for managing GPUs and nano for editing text:
    ```bash
-   yay -S optimus-manager
+   yay -S optimus-manager nano
    ```
    - Reboot, add `startup_mode=nvidia` to `/usr/share/optimus-manager.conf`, and run `optimus-manager --switch nvidia`
 
-5. Install autorandr for automatic display configuration:
+05. Install autorandr for automatic display configuration:
    ```bash
    yay -S autorandr
    ```
 
-6. Install bluez and start it for Bluetooth connections:
+06. Install bluez and start it for Bluetooth connections:
    ```bash
    yay -S bluez bluez-libs bluez-tools bluez-utils
    ```
@@ -50,27 +50,32 @@
    sudo systemctl enable --now bluetooth
    ```
 
-7. Install fonts:
+07. Install fonts:
    ```bash
    yay -S noto-fonts noto-fonts-cjk noto-fonts-extra ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-common ttf-jetbrains-mono-nerd ttf-sourcecodepro-nerd
    ```
 
-8. Install polybar:
+08. Install polybar:
    ```bash
    yay -S polybar
    ```
 
-9. Install Nitrogen for managing wallpapers:
+09. Install Nitrogen for managing wallpapers:
    ```bash
    yay -S nitrogen
    ```
 
-10. Clone the repository:
+10. Some other tools you probably want:
+   ```bash
+   yay -S btop-gpu-git dunst flameshot neofetch
+   ```
+
+11. Clone the repository:
    ```bash
    git clone https://github.com/FelipeFMA/nekrodots.git
    ```
 
-11. Manually place the files in the appropriate locations and reboot.
+12. Manually place the files in the appropriate locations and reboot.
 
 **You're done!**
 
