@@ -2,7 +2,8 @@
 
 **⚠️ Disclaimer: Every configuration in this repository is adapted for my specific hardware and needs. If you intend to replicate it, be aware that extensive tweaking may be necessary.**
 
-![Nekro Dots Preview](https://github.com/FelipeFMA/nekrodots/assets/30672253/7cacb29d-b13f-4a32-b897-0f7b3d3306e1)
+![Nekro Dots Preview](https://github.com/FelipeFMA/nekrodots/assets/30672253/7c2d80a4-1f63-425c-897f-369314ea210b)
+
 
 ## Setup Guide
 
@@ -73,6 +74,6 @@
 
 **You're done!**
 
-![Nekro Dots Preview](https://github.com/FelipeFMA/nekrodots/assets/30672253/5afc431a-85ca-4f6c-8156-f419c201d1c6)
+![Nekro Dots Preview2](https://github.com/FelipeFMA/nekrodots/assets/30672253/5afc431a-85ca-4f6c-8156-f419c201d1c6)
 
 Happy configuring! 🚀
