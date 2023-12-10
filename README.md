@@ -8,7 +8,7 @@
 
 ### Prerequisites
 
-- **X Session with i3, a display manager, and NetworkManager (for WiFi) already installed and configured.**
+- **X Session with i3, a display manager, and NetworkManager (for WiFi) already installed and running.**
 
 ### Installation Steps
 
