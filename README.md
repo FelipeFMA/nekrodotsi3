@@ -10,17 +10,21 @@ Install i3:
 
 ```sudo pacman -S i3```
 
+
 Install a display manager (i personally like lightdm with the lightdm-gtk-greeter):
 
 ```sudo pacman -S lightdm lightdm-gtk-greeter```
+
 
 Install a terminal emulator (I use alacritty):
 
 ```sudo pacman -S alacritty``` 
 
+
 Install an AUR helper (yay is my favorite):
 
 ```pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si```
+
 
 
 Clone the repo:
@@ -29,8 +33,11 @@ Clone the repo:
 Now, manually put the files in the right place...
 
 
+
 Install autorandr for automatic display configuration:
 
 ```yay -S autorandr```
+
+
 
 TODO
