@@ -17,14 +17,14 @@
    sudo pacman -S alacritty
    ```
 
-2. Install an AUR helper (yay is recommended)
+2. Install an AUR helper (yay is my favorite)
    ```bash
    pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay-bin.git && cd yay-bin && makepkg -si
    ```
 
 3. Install the Nvidia driver:
    ```bash
-   yay -S nvidia          # For normal Linux kernel
+   yay -S nvidia          # For normal linux kernel
    ```
    ```bash
    yay -S nvidia-dkms     # For custom kernels such as linux-zen
@@ -59,12 +59,17 @@
    yay -S polybar
    ```
 
-9. Clone the repository:
+9. Install Nitrogen for managing wallpapers:
+   ```bash
+   yay -S nitrogen
+   ```
+
+10. Clone the repository:
    ```bash
    git clone https://github.com/FelipeFMA/nekrodots.git
    ```
 
-10. Manually place the files in the appropriate locations and reboot.
+11. Manually place the files in the appropriate locations and reboot.
 
 **You're done!**
 
