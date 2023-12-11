@@ -1,4 +1,4 @@
 #!/bin/bash
-# Automáticamente arruma o monitor
+# Automatically arrange monitors
 
 autorandr --change

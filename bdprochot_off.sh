@@ -1,4 +1,5 @@
 #!/bin/bash
+# Turns bdprochot off
 
 sudo modprobe msr
 r=`sudo rdmsr 0x1FC`

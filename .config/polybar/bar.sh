@@ -4,4 +4,4 @@ pkill polybar
 
 sleep 1;
 
-polybar barra &
+polybar bar &
