@@ -67,7 +67,7 @@
 
 10. Some other tools you probably want:
    ```bash
-   yay -S btop-gpu-git dunst flameshot neofetch
+   yay -S btop-gpu-git dunst flameshot neofetch xorg-xinput
    ```
 
 11. Clone the repository:
