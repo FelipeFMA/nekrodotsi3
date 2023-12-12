@@ -89,8 +89,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-# Wallpaper and polybar
-exec_always --no-startup-id nitrogen --restore
+# Polybar
 exec_always --no-startup-id $HOME/.config/polybar/bar.sh
 
 # Colors
@@ -109,7 +108,7 @@ smart_gaps off
 # Put the first desktop as the primary display
 workspace 1 output primary 
 
-# Displays
+# Displays and wallpaper
 exec_always --no-startup-id /home/felipe/.config/i3/display.sh
 
 # Turn off mouse accel
