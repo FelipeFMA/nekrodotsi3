@@ -69,13 +69,17 @@
    ```bash
    yay -S btop-gpu-git dunst flameshot neofetch xorg-xinput cpupower
    ```
+11 For maximum performance: ❗DELL ONLY❗
+   ```bash
+   yay -S i8kutils dell-bios-fan-control-git
+   ```
 
-11. Clone the repository:
+12. Clone the repository:
    ```bash
    git clone https://github.com/FelipeFMA/nekrodots.git
    ```
 
-12. Manually place the files in the appropriate locations and reboot.
+13. Manually place the files in the appropriate locations and reboot.
 
 **You're done!**
 

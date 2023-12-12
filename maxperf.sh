@@ -1,5 +1,6 @@
 #!/bin/bash
 # Turns bdprochot off, and put fans at max speed
+# Was only made for my laptop, a G7-7588.
 
 # BD PROCHOT off
 sudo modprobe msr

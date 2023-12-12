@@ -1,4 +1,5 @@
 # This file must be in /etc/default/cpupower
+# Was made for MY LAPTOP, a G7-7588
 
 # Define CPUs governor
 # valid governors: ondemand, performance, powersave, conservative, userspace.
