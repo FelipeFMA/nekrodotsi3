@@ -69,7 +69,8 @@
    ```bash
    yay -S btop-gpu-git dunst flameshot neofetch xorg-xinput cpupower
    ```
-11 For maximum performance: ❗DELL ONLY❗
+
+11. For maximum performance: ❗DELL ONLY❗
    ```bash
    yay -S i8kutils dell-bios-fan-control-git
    ```
