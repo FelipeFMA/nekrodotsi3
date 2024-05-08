@@ -1,5 +1,8 @@
 # Nekro Dots
 
+I don't use i3wm anymore, switched to hyprland, here is my new dots: https://github.com/FelipeFMA/nekrodots
+
+
 **⚠️ Disclaimer: Every configuration in this repository is adapted for my specific hardware and needs. If you intend to replicate it, be aware that extensive tweaking may be necessary.**
 
 ![Nekro Dots Preview](https://github.com/FelipeFMA/nekrodots/assets/30672253/7c2d80a4-1f63-425c-897f-369314ea210b)
