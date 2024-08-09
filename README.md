@@ -63,9 +63,9 @@ I switched to hyprland, here is my new dots: https://github.com/FelipeFMA/nekrod
    yay -S polybar
    ```
 
-09. Install Nitrogen for managing wallpapers:
+09. Install hsetroot for managing wallpapers:
    ```bash
-   yay -S nitrogen
+   yay -S hsetroot
    ```
 
 10. Some other tools you probably want:
