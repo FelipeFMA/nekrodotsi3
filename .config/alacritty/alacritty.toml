@@ -1,0 +1,4 @@
+import = ["/home/felipe/.config/alacritty/theme.toml"]
+
+[cursor]
+style = "beam"
