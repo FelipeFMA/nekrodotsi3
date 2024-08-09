@@ -15,11 +15,17 @@ floating_modifier $mod
 # Open terminal
 bindsym $mod+Return exec --no-startup-id alacritty
 
+# Open browser
+bindsym $mod+w exec --no-startup-id thorium-browser
+
 # Close windows
 bindsym $mod+Shift+q kill
 
 # Open dmenu
 bindsym $mod+d exec --no-startup-id dmenu_run -fn 'Source Code Pro Semibold-11' -nb '#282828' -nf '#FFFFFF' -sb '#808080' -sf '#282828'
+
+# Lock screen
+bindsym $mod+l exec --no-startup-id betterlockscreen -l --time-format %I:%M:%S
 
 # Change focus
 bindsym $mod+Left focus left
@@ -34,14 +40,14 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # Vertical / Horizontal
-bindsym $mod+h split h;exec notify-send 'Modo horizontal'
-bindsym $mod+v split v;exec notify-send 'Modo vertical'
+bindsym $mod+h split h;exec --no-startup-id notify-send 'Modo horizontal'
+bindsym $mod+v split v;exec --no-startup-id notify-send 'Modo vertical'
 
 # Fullscreen
 bindsym $mod+f fullscreen toggle
 
 # toggle tilling
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+space floating toggle
 
 # Virtual desktops
 set $ws1 1
@@ -79,21 +85,11 @@ for_window [class="Pavucontrol"] floating enable
 # Restart i3
 bindsym $mod+Shift+r restart
 
-# Change window size with keyboard
-bindsym $mod+r mode "resize"
-mode "resize" {
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-        bindsym Escape mode "default"
-}
-
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/bar.sh
 
 # Colors
-client.focused          #282828 #282828 #838383 #282828 #282828
+client.focused          #282828 #282828 #838383 #888888 #888888
 client.focused_inactive #282828 #282828 #838383 #282828 #282828
 client.unfocused        #282828 #282828 #838383 #282828 #282828
 client.urgent           #282828 #282828 #838383 #282828 #282828
@@ -106,10 +102,12 @@ gaps outer -4
 smart_gaps off
 
 # Put the first desktop as the primary display
-workspace 1 output primary 
+workspace 1 output eDP-1-1
+workspace 2 output HDMI-0
 
 # Displays and wallpaper
-exec_always --no-startup-id /home/felipe/.config/i3/display.sh
+exec --no-startup-id autorandr -c
+exec --no-startup-id hsetroot -full ~/Pictures/wallpapers/Space.png
 
 # Turn off mouse accel
 exec_always --no-startup-id for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
@@ -119,5 +117,4 @@ exec --no-startup-id lxpolkit
 
 # Screenshot
 exec --no-startup-id flameshot
-bindsym Print exec --no-startup-id flameshot gui
-
+bindsym $mod+s exec --no-startup-id flameshot gui
